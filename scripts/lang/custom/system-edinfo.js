@@ -18,7 +18,6 @@ $.lang.register('edinfo.playing.shipbuild.delsuccess', 'The build information fo
 $.lang.register('edinfo.playing.shipbuild.updatenoname', 'Unable to update the ship build on the database, a ship name was not specified.');
 $.lang.register('edinfo.playing.shipbuild.updatenoURL', 'Unable to update the ship build on the database, the new build URL for the ship was not specified.');
 $.lang.register('edinfo.playing.shipbuild.updatesuccess', 'The build information for $1 was successfully updated within the database with the new build URL of --> $2');
-$.lang.register('edinfo.playing.edcareers', 'Want to see what careers you can embark upon in Elite: Dangerous?  Take a look at this image made by CMDR Qohen Leth for the options that are available --> https://iand.live/EDCareers');
 
 // Online, but playing something else
 // ----------------------------------

@@ -185,9 +185,6 @@
                         }
                     }
                 }
-                if (command.equalsIgnoreCase('edcareers')) {
-                    $.say($.lang.get('edinfo.playing.edcareers'));
-                }
             } else {
                 // Currently online, but playing something else.
                 $.say($.lang.get('edinfo.playing.othergame', cmdrName));
@@ -241,7 +238,6 @@
             $.registerChatSubcommand('edshipbuild', 'add', 1);
             $.registerChatSubcommand('edshipbuild', 'delete', 1);
             $.registerChatSubcommand('edshipbuild', 'update', 1);
-            $.registerChatCommand('./custom/edinfo.js', 'edcareers', 7);
             $.registerChatCommand('./custom/edinfo.js', 'edofflinemode', 1);
             $.registerChatCommand('./custom/edinfo.js', 'edinfopath', 1);
             $.registerChatCommand('./custom/edinfo.js', 'edsetname', 1);
