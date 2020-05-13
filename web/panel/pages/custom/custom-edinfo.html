@@ -1,0 +1,46 @@
+﻿<!--
+    Customized panel to show the ships that are stored within the EDShipBuild database to assist
+    with the command line usage in Twitch chat.
+-->
+
+<main>
+    <!-- Header -->
+    <section class="content-header">
+        <h1>Elite: Dangerous Ship Builds</h1>
+        <ol class="breadcrumb">
+            <li><a href="javascript:void(0);"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li>Elite: Dangerous</li>
+            <li class="active">EDInfo</li>
+        </ol>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="box box-solid">
+            <div class="box-header with-border">
+                <label class="switch" data-toggle="tooltip" title="Module toggle">
+                    <input type="checkbox" id="edinfoModuleToggle" checked="checked" />
+                    <span class="slider round"></span>
+                </label>
+                <h3 class="box-title">Elite: Dangerous Info Module</h3>
+            </div>
+            <form role="form">
+                <!-- Box Content -->
+                <div class="box-body">
+                    <div class="load-ajax">
+                        <div class="spinner"></div>
+                        <p class="load-ajax-text">Loading...</p>
+                    </div>
+                    <div class="btn-toolbar pull-right">
+                        <button class="btn btn-primary btn-sm" type="button" id="edshipbuild-add-button"><i class="fa fa-plus"></i>&nbsp; Add Ship Build</button>
+                        <button class="btn btn-primary btn-sm" type="button" id="edinfo-settings-button"><i class="fa fa-cog"></i>&nbsp; Settings</button>
+                    </div>
+
+                    <table id="shipBuildTable" class="table table-bordered table-hover"></table>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- EDInfo Script -->
+    <script src="/panel/js/pages/custom/edinfo.js"></script>
+</main>
